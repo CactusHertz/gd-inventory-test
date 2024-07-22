@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://36g6an2ygh71"]
+[gd_scene load_steps=5 format=3 uid="uid://36g6an2ygh71"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_vxo73"]
+[ext_resource type="Resource" uid="uid://de1ige6h2qgw2" path="res://test_inv.tres" id="2_xejdb"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_kh0y3"]
 
@@ -9,6 +10,7 @@
 [node name="Player" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 script = ExtResource("1_vxo73")
+inventory_data = ExtResource("2_xejdb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 mesh = SubResource("CapsuleMesh_kh0y3")
